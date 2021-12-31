@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <style>
+    body {
+      padding-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light rounded">
+
+    <span class="navbar-brand-collapse mx-3  h5">
+      <ul class="list-unstyled">
+        <li>
+          Modern Theoretical Tools for Understanding and Designing
+        </li>
+        <li>
+          Next-generation Information Retrieval System
+        </li>
+      </ul>
+    </span>
+
+    <div class="navbar-collapse justify-content-md-center" id="navbars-head">
+      <ul class="navbar-nav">
+        <li class="hidden active"><a href="#page-top"></a></li>
+        <li class="nav-item page-scroll">
+          <a class="nav-link" href="#section-intro"> Introduction </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section-outline"> Outline </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#section-presenter"> Presenter </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#section-presenter"> Contact </a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+
+
+  <section id="section-intro">
+    <div class="container ">
+      <div class="row">
+          <h1 class="display-5 text-center">Introduction</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <p class="large text-muted">
+            In the relatively short history of machine learning, the subtle balance between engineering and theoretical
+            progress has been proved
+            critical at various stages. The most recent wave of AI has brought
+            to the IR community powerful techniques, particularly for pattern
+            recognition. While many benefits from the burst of ideas as numerous tasks become algorithmically feasible,
+            the balance is tilting
+            toward the application side. The existing theoretical tools in IR can
+            no longer explain, guide, and justify the newly-established methodologies. With no choices, we have to bet
+            our design on black-box
+            mechanisms that we only empirically understand.
+          </p>
+
+          <p class="large text-muted">
+            The consequences can be suffering: in stark contrast to how the IR industry has envisioned modern AI making life easier, 
+            many are experiencing increased confusion and costs in data manipulation, model selection, monitoring, censoring, and decision making. 
+            This reality is not surprising: without handy theoretical tools, we often lack principled knowledge of the pattern recognition model's expressivity, 
+            optimization property, generalization guarantee, and our decision-making process has to rely on over-simplified assumptions and human judgments from time to time.
+
+          </p>
+          <p class="large text-muted">
+            Facing all the challenges, we started researching advanced theoretical tools emerging from various domains that can potentially 
+            resolve modern IR problems. We encountered many impactful ideas and made several independent publications emphasizing different pieces.
+            Time is now to bring the community a systematic tutorial on how we successfully adapt those tools and make significant progress in understanding, 
+            designing, and eventually productionize impactful IR systems. We emphasize systematicity because IR is a comprehensive discipline that touches 
+            upon particular aspects of learning, causal inference analysis, interactive (online) decision-making, etc. 
+            It thus requires systematic calibrations to render the actual usefulness of the imported theoretical tools to serve IR problems, 
+            as they usually exhibit unique structures and definitions. Therefore, we plan this tutorial to systematically demonstrate our learning and 
+            successful experience of using advanced theoretical tools for understanding and designing IR systems.       
+          </p>
+        </div>
+      </div>
+
+  </section>
+
+  <section id="section-outline", class="wow fadeInUp">
+      <div class="row">
+        <h1 class="display-5 text-center">Outline</h1>
+      </div>
+      <div class="container-fluid">
+          <div class="section-header">
+              <p class = "text-center">Due to the ongoing worldwide COVID-19 situation, this tutorial will take place online on. The exact date and time will be posted later in this website</p>
+
+              <div style="margin: 10px auto 30px auto; width: 50%;">
+                  <table class="table">
+                      <thead>
+                      <tr>
+                          <th scope="col" class="time"></th>
+                          <th scope="col"></th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                          <th scope="row" class="time"><strong>08:00 08:10</strong></th>
+                          <td><strong>Welcome and Opening Remark</strong></td>
+                      </tr>
+                      <tr>
+                          <th scope="row" class="time"><strong>08:10 09:20</strong></th>
+                          <td><strong>Session 1: Pattern recognition & case Study</strong></td>
+                      </tr>
+                      <tr>
+                          <th scope="row" class="time"></th>
+                          <td>
+                              <div>
+                                  <p>
+                                    There are two critical stages for designing and understanding pattern recognition models: 
+                                    the pre-designing stage where we generate
+                                    a comprehensive inductive bias for the model, and the post-training
+                                    stage where we diagnose the model to understand why it behaves
+                                    in certain ways. We wish to answer the following questions in order to build up the intuition:
+                                  </p>
+                                  <ol>
+                                    <li>
+                                      what the model is <strong>capable of expressing</strong>
+                                    </li>
+                                    <li>
+                                      what are the <strong>optimization properties</strong> of the model?
+                                    </li>
+                                    <li>
+                                      how the model may <strong>generalize</strong> to unseen data
+                                    </li>
+                                    <li>
+                                      why the model would perofrm in <strong>particular</strong> ways
+                                    </li>
+                                  </ol>
+                                  <p>
+                                    However, for deep learning models these questions are incredibly challenging to answer. In this session,
+                                    we introduce the recent works that provides prespectives to them leveraging the theoretical tools 
+                                    such as <i>neural tagent kernel</i>, <i>implcit bias of GD</i>, <i>structural complexity</i>, <i>domain shift</i>, <i>spectral analysis</i>, and <i>gradient-based attribution.</i>
+                                  </p>
+                                  <!-- <ul>
+                                    <li>
+                                      With the help of theoretical tools such as <i>neural tagent kernel</i>, <i>implcit bias of GD</i> and <i>structural complexity</i>, 
+                                      we provide the answer of <i>expressivity</i>, <i>optimization property</i> and <i>generalization guarantee</i>
+                                    </li>
+                                    <li>
+                                      We study the out-of-distribution performances of those deep learning IR models by analyzing the impact of <i>domain shift</i>
+
+                                    </li>
+                                    <li>
+                                      We show that how graph convolutional networks (GCN) used in practices intrinsically serves as 
+                                      domain feature engineering using <i>spectral analysis</i>
+                                    </li>
+                                    <li>
+                                      We present the powerful tool of <i>gradient-based attribution</i> which helps reveal the impacts of components in complex netrual networks.
+                                    </li>
+                                
+                                  </ul> -->
+                                </div>
+                          </td>
+                      </tr>
+
+                      <tr>
+                          <th scope="row" class="time"><strong>09:20 09:40</strong></th>
+                          <td><strong>Q&A and Coffee Break</strong></td>
+                      </tr>
+
+                      <tr>
+                          <th scope="row" class="time"><strong>09:40 10:20</strong></th>
+                          <td><strong>Session 2: Causal inference analysis & Case Study</strong></td>
+                      </tr>
+                      <tr>
+                          <th scope="row" class="time"></th>
+                          <td>
+                            <div>
+                              <p>
+                                The interventional nature of IR system is not only reflected in A/B
+                                testings, but also the exposures we make (e.g. search result, recommendation, ads displacement) since they can influence users’
+                                behavior. According to whether the intervention target is (at least partly) controlled, we have the experimental and observational settings. The IR community may find the experimental setting more
+                                familiar for causal inference analysis, but recently there has been
+                                growing interest in using the passively collected observational data
+                                for counterfactual reasoning. In both settings, we find Pearl's <i>docalculus</i> and <i>structural equation framework</i> extremely powerful
+                                for systematically studying causal problems. For example, we rigorously reveal the fundamental limitations of treating observational
+                                feedback with the data missing-not-at-random (MNAR) and the
+                                domain-adaptation view. These two domain practices are gaining
+                                high popularity, and we also provide promising directions for fixing their issues by discovering <i>invariant mechanisms</i> that comprise
+                                causality. Towards this end, we introduce advanced optimization
+                                and learning tools for <i>causal discovery</i> (e.g. continuous directed
+                                acyclic graph (DAG) optimization) and <i>learning from interventional
+                                  data</i>. Observational study is not the only focus of our tutorial.
+                                We mentioned earlier that existing online experiment frameworks
+                                often rely on oversimplified assumptions. By presenting the prominent instrumental variable (IV) and mediation analysis tools, we
+                                demonstrate how to lift the assumptions and conduct more robust
+                                inferences for IR experiments.
+                                
+
+                              </p>
+
+                            </div>
+                          </td>
+                      </tr>
+                     
+                      <tr>
+                          <th scope="row" class="time"><strong>10:20 10:40</strong></th>
+                          <td><strong>Q&A and Coffee Break</strong></td>
+                      </tr>
+
+                      <tr>
+                          <th scope="row" class="time"><strong>10:40 11:20</strong></th>
+                          <td><strong>Session 3: Interactive(online) decision making</strong></td>
+                      </tr>
+                      <tr>
+                          <th scope="row" class="time"></th>
+                          <td>
+                            <div>
+                              <p>
+                                Modern IR systems intrinsically build on the understandings of
+                                interaction between the information consumer and provider. The
+                                <i>exploration-exploitation</i> dilemma thus stands out as a major challenge because there are explicit or implicit costs associated with
+                                each interaction. Many are motivated to characterize the underlying dynamics using such as <i>bandits</i> and <i>reinforcement learning</i>
+                                (RL). Setting the practicality issues aside, there are critical conceptual challenges 
+                                unsettled for both approaches. Notably, there is model-based and model-free options for optimizing the policy in
+                                each setting, and while many empirical comparisons have been
+                                conducted, there is no rigorous conclusion on what conditions
+                                bring the maximum performance out of each candidate. During
+                                our investigation, we find the <i>optimal control</i> an extraordinary tool
+                                and testbed for revealing the strength and weaknesses of many
+                                solutions. On the other hand, some empirical studies have found
+                                inferior performances from bandits and RL, though they are conceptually more suitable for the tasks. We reveal that this phenomenon
+                                is caused by the robustness issue: compared with the static counterparts, online decision-making methods are much more sensitive to
+                                the algorithmic uncertainty since they tend to accumulate during
+                                the process. Therefore, we introduce the advanced theoretical tools
+                                from robust optimization and present real-world examples of how
+                                to use them to enhance the robustness of our design
+                              </p>
+                            </div>
+                          </td>
+                      </tr>
+                      
+                      <tr>
+                          <th scope="row" class="time"><strong>11:20 11:40</strong></th>
+                          <td><strong>Q&A and Final Remart</strong></td>
+                      </tr>
+                      </tbody>
+                  </table>
+          </div>
+          </div>
+      </div>
+
+  </section>
+
+  </section>
+
+
+  <section id="section-presenter" class="section-wrapper about-event">
+    <div class="container">
+      <div class="row">
+        <h1 class="display-5 text-center">Presenter</h1>
+    </div>
+
+    </div>
+  </section>
+
+
+  <section id="section-contact" class="section-wrapper pricing-section">
+    <div class="container">
+      <div class="row">
+        <h1 class="display-5 text-center">Contact</h1>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+</body>
+
+</html>
