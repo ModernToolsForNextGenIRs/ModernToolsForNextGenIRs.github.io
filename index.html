@@ -46,11 +46,11 @@
           <a class="nav-link" href="#section-intro"> Introduction </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section-outline"> Outline </a>
+          <a class="nav-link" href="#section-outline"> WSDM'22 Tutorial </a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#section-presenter"> Presenter </a>
+          <a class="nav-link" href="#section-presenter"> Contributors </a>
         </li>
 
         <li class="nav-item">
@@ -113,11 +113,13 @@
 
   <section id="section-outline", class="wow fadeInUp">
       <div class="row">
-        <h1 class="display-5 text-center" style="padding-top:100px;">Outline</h1>
+        <h1 class="display-5 text-center" style="padding-top:100px;">Tutorial session on WSDM'22</h1>
       </div>
       <div class="container-fluid">
           <div class="section-header">
-              <p class = "text-center">Due to the ongoing worldwide COVID-19 situation, this tutorial will take place online on Monday, 2022-02-21</p>
+              <p class = "text-center">We gave this tutorial during <a href="https://www.wsdm-conference.org/2022/accepted-tutorials/"> WSDM'22 tutorial day<a> on Monday, 2022-02-21. 
+                This tutorial covers the topics around on <i>pattern recognition</i> and some of the topics on <i>decision making</i>.
+              </p>
 
               <div style="margin: 10px auto 30px auto; width: 50%;">
                   <table class="table">
@@ -129,16 +131,21 @@
                       </thead>
                       <tbody>
                       <tr>
-                          <th scope="row" class="time"><strong>13:00 13:10 MST</strong></th>
+                          <th scope="row" class="time"><strong> </strong></th>
                           <td><strong>Welcome and Opening Remark</strong></td>
                       </tr>
                       <tr>
-                          <th scope="row" class="time"><strong>13:10 14:20 MST</strong></th>
+                          <th scope="row" class="time"><strong> </strong></th>
                           <td><strong>Session 1: Pattern recognition & case Study</strong></td>
                       </tr>
                       <tr>
                           <th scope="row" class="time"></th>
                           <td>
+                            <div class="row">
+                              <div class="text-center">
+                                <img src="resource/part1-summary.png" class="img-fluid" alt="img">
+                              </div>
+                            </div>
                               <div>
                                   <p>
                                     There are two critical stages for designing and understanding pattern recognition models: 
@@ -166,111 +173,80 @@
                                     we introduce the recent works that provides prespectives to them leveraging the theoretical tools 
                                     such as <i>neural tagent kernel</i>, <i>implcit bias of GD</i>, <i>structural complexity</i>, <i>domain shift</i>, <i>spectral analysis</i>, and <i>gradient-based attribution.</i>
                                   </p>
-                                  <!-- <ul>
-                                    <li>
-                                      With the help of theoretical tools such as <i>neural tagent kernel</i>, <i>implcit bias of GD</i> and <i>structural complexity</i>, 
-                                      we provide the answer of <i>expressivity</i>, <i>optimization property</i> and <i>generalization guarantee</i>
-                                    </li>
-                                    <li>
-                                      We study the out-of-distribution performances of those deep learning IR models by analyzing the impact of <i>domain shift</i>
-
-                                    </li>
-                                    <li>
-                                      We show that how graph convolutional networks (GCN) used in practices intrinsically serves as 
-                                      domain feature engineering using <i>spectral analysis</i>
-                                    </li>
-                                    <li>
-                                      We present the powerful tool of <i>gradient-based attribution</i> which helps reveal the impacts of components in complex netrual networks.
-                                    </li>
-                                
-                                  </ul> -->
                                 </div>
                           </td>
-                      </tr>
-
-                      <tr>
-                          <th scope="row" class="time"><strong>14:20 14:40 MST</strong></th>
-                          <td><strong>Q&A and Coffee Break</strong></td>
-                      </tr>
-
-                      <tr>
-                          <th scope="row" class="time"><strong>14:40 15:20 MST</strong></th>
-                          <td><strong>Session 2: Causal inference analysis & Case Study</strong></td>
-                      </tr>
-                      <tr>
-                          <th scope="row" class="time"></th>
-                          <td>
-                            <div>
-                              <p>
-                                The interventional nature of IR system is not only reflected in A/B
-                                testings, but also the exposures we make (e.g. search result, recommendation, ads displacement) since they can influence users’
-                                behavior. According to whether the intervention target is (at least partly) controlled, we have the experimental and observational settings. The IR community may find the experimental setting more
-                                familiar for causal inference analysis, but recently there has been
-                                growing interest in using the passively collected observational data
-                                for counterfactual reasoning. In both settings, we find Pearl's <i>docalculus</i> and <i>structural equation framework</i> extremely powerful
-                                for systematically studying causal problems. For example, we rigorously reveal the fundamental limitations of treating observational
-                                feedback with the data missing-not-at-random (MNAR) and the
-                                domain-adaptation view. These two domain practices are gaining
-                                high popularity, and we also provide promising directions for fixing their issues by discovering <i>invariant mechanisms</i> that comprise
-                                causality. Towards this end, we introduce advanced optimization
-                                and learning tools for <i>causal discovery</i> (e.g. continuous directed
-                                acyclic graph (DAG) optimization) and <i>learning from interventional
-                                  data</i>. Observational study is not the only focus of our tutorial.
-                                We mentioned earlier that existing online experiment frameworks
-                                often rely on oversimplified assumptions. By presenting the prominent instrumental variable (IV) and mediation analysis tools, we
-                                demonstrate how to lift the assumptions and conduct more robust
-                                inferences for IR experiments.
-                                
-
-                              </p>
+                        </tr>
 
                             </div>
                           </td>
-                      </tr>
-                     
-                      <tr>
-                          <th scope="row" class="time"><strong>15:20 15:40 MST</strong></th>
-                          <td><strong>Q&A and Coffee Break</strong></td>
-                      </tr>
+                    </tr>
 
-                      <tr>
-                          <th scope="row" class="time"><strong>15:40 16:20 MST</strong></th>
-                          <td><strong>Session 3: Interactive(online) decision making</strong></td>
-                      </tr>
-                      <tr>
-                          <th scope="row" class="time"></th>
-                          <td>
-                            <div>
-                              <p>
-                                Modern IR systems intrinsically build on the understandings of
-                                interaction between the information consumer and provider. The
-                                <i>exploration-exploitation</i> dilemma thus stands out as a major challenge because there are explicit or implicit costs associated with
-                                each interaction. Many are motivated to characterize the underlying dynamics using such as <i>bandits</i> and <i>reinforcement learning</i>
-                                (RL). Setting the practicality issues aside, there are critical conceptual challenges 
-                                unsettled for both approaches. Notably, there is model-based and model-free options for optimizing the policy in
-                                each setting, and while many empirical comparisons have been
-                                conducted, there is no rigorous conclusion on what conditions
-                                bring the maximum performance out of each candidate. During
-                                our investigation, we find the <i>optimal control</i> an extraordinary tool
-                                and testbed for revealing the strength and weaknesses of many
-                                solutions. On the other hand, some empirical studies have found
-                                inferior performances from bandits and RL, though they are conceptually more suitable for the tasks. We reveal that this phenomenon
-                                is caused by the robustness issue: compared with the static counterparts, online decision-making methods are much more sensitive to
-                                the algorithmic uncertainty since they tend to accumulate during
-                                the process. Therefore, we introduce the advanced theoretical tools
-                                from robust optimization and present real-world examples of how
-                                to use them to enhance the robustness of our design
-                              </p>
+                    <tr>
+                        <th scope="row" class="time"><strong> </strong></th>
+                        <td><strong>Session 2: Decision Making</strong></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="time"></th>
+                        <td>
+                          <div class="row">
+                            <div class="text-center">
+                              <img src="resource/part2-summary.png" class="img-fluid" alt="img">
                             </div>
-                          </td>
-                      </tr>
-                      
-                      <tr>
-                          <th scope="row" class="time"><strong>16:20 16:40 MST</strong></th>
-                          <td><strong>Q&A and Final Remart</strong></td>
-                      </tr>
-                      </tbody>
-                  </table>
+                          </div>
+                          <div>
+                            <p>
+                              Modern IR systems intrinsically build on the understandings of
+                              interaction between the information consumer and provider. The
+                              <i>exploration-exploitation</i> dilemma thus stands out as a major challenge because there are explicit or implicit costs associated with
+                              each interaction. Many are motivated to characterize the underlying dynamics using such as <i>bandits</i> and <i>reinforcement learning</i>
+                              (RL). Setting the practicality issues aside, there are critical conceptual challenges 
+                              unsettled for both approaches. Notably, there is model-based and model-free options for optimizing the policy in
+                              each setting, and while many empirical comparisons have been
+                              conducted, there is no rigorous conclusion on what conditions
+                              bring the maximum performance out of each candidate. During
+                              our investigation, we find the <i>optimal control</i> an extraordinary tool
+                              and testbed for revealing the strength and weaknesses of many
+                              solutions. On the other hand, some empirical studies have found
+                              inferior performances from bandits and RL, though they are conceptually more suitable for the tasks. We reveal that this phenomenon
+                              is caused by the robustness issue: compared with the static counterparts, online decision-making methods are much more sensitive to
+                              the algorithmic uncertainty since they tend to accumulate during
+                              the process. Therefore, we introduce the advanced theoretical tools
+                              from robust optimization and present real-world examples of how
+                              to use them to enhance the robustness of our design.
+                              
+                            </p>
+
+                          </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                      <th scope="row" class="time"><strong> </strong></th>
+                      <td><strong>Slides</strong></td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="time"></th>
+                    <td>
+                      <div>
+                        <ol>
+                          <li>
+                            <a href="resource/slides/tutorial_wsdm22_p1.pdf" class="link-primary"> Part one: pattern recognition </a>
+                          </li>
+                          <li>
+                            <a href="resource/slides/tutorial_wsdm22_p2.pdf" class="link-primary"> Part one cont'd </a>
+                          </li>
+                          <li>
+                            <a href="resource/slides/tutorial_wsdm22_p3.pdf" class="link-primary"> Part two: decision making </a>
+                          </li>
+                        </ol>
+                      </div>
+                    </td>
+                </tr>
+
+                    
+
+                    </tbody>
+                </table>
           </div>
           </div>
       </div>
@@ -283,7 +259,7 @@
   <section id="section-presenter" class="section-wrapper about-event">
     <div class="container">
       <div class="row">
-        <h1 class="display-5 text-center" style="padding-top:100px;">Presenters</h1>
+        <h1 class="display-5 text-center" style="padding-top:100px;">Contributors</h1>
     </div>
 
     <div class="container">
